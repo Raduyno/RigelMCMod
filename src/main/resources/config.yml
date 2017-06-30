@@ -54,10 +54,10 @@ motd:
   colorful_motd: true
 
   # What shows up on line 1
-  line_one: '&lRigelMC &l- &lEpic &lFree &lOP'
+  line_one: '&l* &lRigelMC &l- &lFree &lOP - &lMinecraft &l1.12'
   
   # What shows up on line 2
-  line_two: '&lDank &lMemes &lAre &lCool'  
+  line_two: 'Summon Herobrine Hacking /levelup ranks'  
 
 # The discord bot self verification system
 verification:
@@ -217,6 +217,7 @@ blocked_commands:
   - 'n:b:/entitydata:_'
   - 'n:b:/setworldspawn:_'
   - 'n:b:/trigger:_'
+  - 'n:b:/discord:_'
   
   # Superadmin commands
   - 's:b:/me:_'
@@ -332,10 +333,11 @@ mp44_enabled: false
 tossmob_enabled: false
 lightning_swing_enabled: true
 
-# Moblimiter
+# Moblimiter. 
+#Made 100 to reduce lagg.
 moblimiter:
-  enabled: false
-  max: 2000
+  enabled: true
+  max: 100
   disable:
     dragon: true
     ghast: true
@@ -350,10 +352,11 @@ flatlands:
   generate_params: 16,stone,32,dirt,1,grass
 
 # Protected Areas - Protect areas so that only superadmins can directly modify blocks in those areas. WorldEdit and other such plugins might bypass this.
+# Made the auto protect area radius larger to make it less griefable.
 protectarea:
   enabled: true
   auto_protect_spawnpoints: true
-  auto_protect_radius: 25.0
+  auto_protect_radius: 30.0
 
 # Host Sender Names - Names that indicate automated services or host-based consoles you want to block from using some commands.
 # Make sure these are all lower-case.
