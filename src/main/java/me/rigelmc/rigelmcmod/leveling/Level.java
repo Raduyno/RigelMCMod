@@ -6,14 +6,14 @@ import org.bukkit.ChatColor;
 public enum Level implements Displayable
 {
 
-    PEASANT("Peasant", ChatColor.WHITE, 0),
-    SERVANT("Servant", ChatColor.YELLOW, 50),
-    YEOMAN("Yeoman", ChatColor.AQUA, 100),
-    KNIGHT("Knight", ChatColor.LIGHT_PURPLE, 150),
-    NOBLE("Noble", ChatColor.GREEN, 200),
-    FREEMAN("Freeman", ChatColor.RED, 250),
-    KING("King", ChatColor.GOLD, 300),
-    POPE("Pope", ChatColor.DARK_PURPLE, 350);
+    NOOB("Noob", ChatColor.WHITE, 0),
+    BEGINNER("Beginner", ChatColor.YELLOW, 50),
+    PRO("Pro", ChatColor.AQUA, 100),
+    NOBLE("Knight", ChatColor.LIGHT_PURPLE, 150),
+    PRESIDENT("President", ChatColor.GREEN, 200),
+    GALACTIC PRESIDENT("GALATIC PRESIDENT", ChatColor.RED, 250),
+    God("God", ChatColor.GOLD, 300),
+    Rigel("Rigel", ChatColor.DARK_PURPLE, 350);
     @Getter
     private final String name;
     @Getter
